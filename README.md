@@ -5,7 +5,7 @@
 		src="https://github.com/RogerBambinetti/devradar-nodejs-reactjs-react-native/blob/master/preview/logo.png">
 </h1>
 <h3 align="center">
-	DevRadar - NodeJS - ReactJS - React Native
+	Proffy - NodeJS - ReactJS - React Native
 </h3>
 
 <p align="center">
