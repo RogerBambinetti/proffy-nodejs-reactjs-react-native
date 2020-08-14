@@ -2,7 +2,7 @@
 <h1 align="center">
 <img
 		width="200"
-		src="https://github.com/RogerBambinetti/devradar-nodejs-reactjs-react-native/blob/master/preview/logo.png">
+		src="">
 </h1>
 <h3 align="center">
 	Proffy - NodeJS - ReactJS - React Native
