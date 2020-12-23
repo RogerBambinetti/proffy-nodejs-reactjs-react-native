@@ -18,7 +18,6 @@
 
 **Este projeto, embasado em videoaulas disponibilizadas pela [RocketSeat](https://github.com/Rocketseat), foi desenvolvido para fins de aprendizagem.**  x telas estão disponíveis, divididas entre o sistema web e mobile.
 
-
 ## Telas
 
 O projeto possui uma versão mobile, mas o layout responsivo da aplicação web também adequa-se a dispositivos móveis.
