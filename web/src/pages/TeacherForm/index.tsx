@@ -2,10 +2,13 @@ import React from 'react';
 
 import Input from '../../components/Input';
 import PageHeader from '../../components/PageHeader';
+import TextArea from '../../components/TextArea';
+import Select from '../../components/Select';
 
 import warningIcon from '../../assets/images/icons/warning.svg';
 
 import './styles.css';
+
 
 export default function TeacherForm() {
     return (
@@ -23,14 +26,34 @@ export default function TeacherForm() {
 
                     <Input name="whatsapp" label="Whatsapp" />
 
+                    <TextArea name="bio" label="biografia" />
                 </fieldset>
                 <fieldset>
                     <legend>Sobre a aula</legend>
 
-                    <Input name="subject" label="Matéria completo" />
+                    <Select name="subject" label="Matéria completo" options={[{ value: "Artes", label: "Artes" }]} />
 
                     <Input name="cost" label="Custo da sua hora/aula" />
 
+                </fieldset>
+                <fieldset>
+                    <legend>
+                        Horários disponíveis
+                    <button type="button">+ Novo Horário</button>
+                    </legend>
+                    <div className="schedule-item">
+                        <Select name="week_day" label="Dia da semana" options={[
+                            { value: "0", label: "Domingo" },
+                            { value: "1", label: "Segunda" },
+                            { value: "2", label: "Terça" },
+                            { value: "3", label: "Quarta" },
+                            { value: "4", label: "Quinta" },
+                            { value: "5", label: "Sexta" },
+                            { value: "6", label: "Sábado" },
+                        ]} />
+                        <Input name="from" label="Das" type="time" />
+                        <Input name="to" label="Até" type="time" />
+                    </div>
                 </fieldset>
                 <footer>
                     <p>

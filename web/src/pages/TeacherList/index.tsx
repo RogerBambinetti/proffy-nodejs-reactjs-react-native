@@ -2,6 +2,7 @@ import React from 'react';
 
 import Input from '../../components/Input';
 import PageHeader from '../../components/PageHeader';
+import Select from '../../components/Select';
 import TeacherItem from '../../components/TeacherItem';
 
 import './styles.css';
@@ -11,9 +12,17 @@ export default function TeacherList() {
         <div id="page-teacher-list" className="container">
             <PageHeader title="Esses são os proffys disponíveis.">
                 <form id="search-teachers">
-                    <Input name="subject" label="Matéria" />
+                    <Select name="subject" label="Matéria completo" options={[{ value: "Artes", label: "Artes" }]} />
 
-                    <Input name="week_day" label="Dia da Semana" />
+                    <Select name="week_day" label="Dia da semana" options={[
+                        { value: "0", label: "Domingo" },
+                        { value: "1", label: "Segunda" },
+                        { value: "2", label: "Terça" },
+                        { value: "3", label: "Quarta" },
+                        { value: "4", label: "Quinta" },
+                        { value: "5", label: "Sexta" },
+                        { value: "6", label: "Sábado" },
+                    ]} />
 
                     <Input type="time" name="time" label="Hora" />
                 </form>
