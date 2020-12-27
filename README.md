@@ -27,7 +27,6 @@ O projeto possui uma versão mobile, mas o layout responsivo da aplicação web 
 		width="700"
 		src="">
 </p>
-
 ## Contribuidores
 
 <table>
