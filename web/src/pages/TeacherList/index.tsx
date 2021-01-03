@@ -5,17 +5,29 @@ import PageHeader from '../../components/PageHeader';
 import Select from '../../components/Select';
 import TeacherItem from '../../components/TeacherItem';
 
+import { Teacher } from '../../components/TeacherItem/';
+
 import api from '../../services/api';
 
 import './styles.css';
 
 export default function TeacherList() {
+    const [teachers, setTeachers] = useState([]);
+
     const [subject, setSubject] = useState('');
     const [week_day, setWeekDay] = useState('');
     const [time, setTime] = useState('');
 
-    function searchTeachers(e: FormEvent) {
+    async function searchTeachers(e: FormEvent) {
         e.preventDefault();
+        const response = await api.get('classes', {
+            params: {
+                subject,
+                week_day,
+                time
+            }
+        });
+        setTeachers(response.data);
     }
 
     return (
@@ -28,7 +40,13 @@ export default function TeacherList() {
                         value={subject}
                         onChange={e => { setSubject(e.target.value) }}
                         options={[
-                            { value: "Artes", label: "Artes" }
+                            { value: "Artes", label: "Artes" },
+                            { value: "Biologia", label: "Biologia" },
+                            { value: "Física", label: "Física" },
+                            { value: "Química", label: "Química" },
+                            { value: "História", label: "Hitória" },
+                            { value: "Português", label: "Português" },
+                            { value: "Matemática", label: "Matemática" },
                         ]}
                     />
 
@@ -55,10 +73,17 @@ export default function TeacherList() {
                         value={time}
                         onChange={e => { setTime(e.target.value) }}
                     />
+
+                    <button type="submit">
+                        Buscar
+                    </button>
                 </form>
             </PageHeader>
             <main>
-                <TeacherItem name="diego fernandes" subject="química" description="loren ipsum dsjdis sdisdijds isdji" price={10} />
+                {teachers.map((teacher: Teacher) => {
+                    <TeacherItem key={teacher.id} teacher={teacher} />
+                })}
+
             </main>
         </div >
     );
