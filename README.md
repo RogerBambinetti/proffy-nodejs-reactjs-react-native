@@ -11,7 +11,7 @@
 <p align="center">
 <img
 		width="700"
-		src="">
+		src="https://github.com/RogerBambinetti/proffy-nodejs-reactjs-react-native/blob/master/preview/logo.png">
 </p>
 
 ## Visão geral
