@@ -2,7 +2,7 @@
 <h1 align="center">
 <img
 		width="200"
-		src="">
+		src="https://github.com/RogerBambinetti/proffy-nodejs-reactjs-react-native/blob/master/preview/logo.png">
 </h1>
 <h3 align="center">
 	Proffy - NodeJS - ReactJS - React Native
@@ -11,7 +11,7 @@
 <p align="center">
 <img
 		width="700"
-		src="https://github.com/RogerBambinetti/proffy-nodejs-reactjs-react-native/blob/master/preview/logo.png">
+		src="">
 </p>
 
 ## Visão geral
