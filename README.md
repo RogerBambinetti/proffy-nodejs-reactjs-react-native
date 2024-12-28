@@ -2,10 +2,10 @@
 <h1 align="center">
 <img
 		width="200"
-		src="https://github.com/RogerBambinetti/proffy-nodejs-reactjs-react-native/blob/master/preview/logo.png">
+		src="https://github.com/RogerBambinetti/proffy-nodejs-react-react-native/blob/master/preview/logo.png">
 </h1>
 <h3 align="center">
-	Proffy - NodeJS - ReactJS - React Native
+	Proffy - NodeJS - React - React Native
 </h3>
 
 <p align="center">
